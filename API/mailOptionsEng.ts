@@ -42,13 +42,17 @@ async function arrangeMailOptionsEng(
       <body >
       <h4>First Name:${patient.firstName}</h4>
       <h4>Last Name:${patient.lastName}</h4>
-      <h4>Sex:${result.sex}</h4>
+      <h4>Gender:${patient.gender}</h4>
       <h2>Age:${age}</h2>
       <!-- הטבלה -->
       <table>
         <tr>
           <th>Question</th>
           <th>Result</th>
+        </tr>
+        <tr>
+          <td>Sex </td>
+          <td> ${signsOfPatient?.sex} </td>
         </tr>
         <tr>
           <td>Difficulty Swallowing Liquids </td>

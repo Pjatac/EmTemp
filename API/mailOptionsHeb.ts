@@ -47,7 +47,7 @@ async function arrangeMailOptionsHeb(
             <h3>-תוצאות</h3>
             <h3>  שם פרטי: ${patient.firstName}</h3>
             <h3>  שם משפחה: ${patient.lastName}</h3>
-            <h3>  מין: ${result.sex}</h3>
+            <h3>  מין: ${patient.gender}</h3>
             <h2>  גיל: ${age}</h2>
             <!-- הטבלה -->
             <table>
@@ -55,6 +55,10 @@ async function arrangeMailOptionsHeb(
                 <th> שאלה</th>
                 <th>תוצאה</th>
                
+              </tr>
+              <tr>
+                <td>:מגדר</td>
+                <td> ${signsOfPatient.sex} </td>
               </tr>
               <tr>
                 <td>:קושי בשתיית נוזלים</td>
