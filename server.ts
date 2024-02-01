@@ -15,7 +15,8 @@ app.use(
   cors()
 );
 app.use("/api/v1/email", emailRoutes);
-app.use('/test', (req, res, next) => {res.json({"result":"success"})});
+app.use('/', (req, res, next) => {res.json({"result":"success"})});
 app.listen(PORT, () => {
   console.log(`server is listening in port:${PORT} :)`);
 });
+
